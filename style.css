@@ -1,7 +1,6 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(48, 179, 184);
     font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
 
@@ -24,12 +23,12 @@ body{
 }
 
 img{
-    width: 108px;
-    height: 108px;
+    width: 150px;
+    height: 150px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 58px;
+    margin-bottom: 58px;
    
    
     border-width: 5px;
@@ -48,11 +47,13 @@ p{
     border-radius: 13px;
     padding:10px;
     border-color: black;
-
+    /* background-color: rgb(218, 218, 26); */
 }
 
 .info{
     display:flex;
+    /* flex:auto; */
+    justify-content: center;
     flex-direction:row;
     align-items: center;
     flex-wrap: wrap;
@@ -60,5 +61,10 @@ p{
     border-style: solid;
     border-radius: 13px;
     /* padding:10px; */
-    border-color:whitesmoke;
+    border-color:black;
+    width:100%;
+    background-color:lightgray;
+
+
+    
 }
