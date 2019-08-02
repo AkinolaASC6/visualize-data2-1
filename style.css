@@ -1,8 +1,64 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: rgb(48, 179, 184);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+
 }
 .head{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    font-size: 65px;
+}
+
+.card{
+    display:flex;
+    flex-direction:row;
+   
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+img{
+    width: 108px;
+    height: 108px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+   
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 13px;
+    
+    border-color: black;
+}
+
+p{
+    display:flex;
+    flex-wrap: wrap;
+    margin:20px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 13px;
+    padding:10px;
+    border-color: black;
+
+}
+
+.info{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 13px;
+    /* padding:10px; */
+    border-color:whitesmoke;
 }
