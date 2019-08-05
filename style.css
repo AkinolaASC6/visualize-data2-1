@@ -23,6 +23,7 @@ body{
 }
 
 img{
+    
     width: 150px;
     height: 150px;
     margin-left: 50px;
@@ -67,4 +68,12 @@ p{
 
 
     
+}
+
+#button{
+display:flex;
+justify-content: flex-end;
+margin:20px;
+
+
 }

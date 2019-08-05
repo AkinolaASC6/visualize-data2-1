@@ -1,4 +1,5 @@
-const parent  = document.querySelector(".main-element")
+const parent  = document.querySelector(".main-element");
+let people = [];
 const createCard = (obj, indx) => {
     const newCard = document.createElement("div");
     newCard.className = "card";
@@ -33,7 +34,7 @@ const createCard = (obj, indx) => {
     newCard.appendChild(infoBox);
     parent.appendChild(newCard);
     
-    console.log(info);
+    // console.log(info);
 }
 const createAll = arr => {
     for(let i = 0; i < arr.length; i++) {
@@ -47,4 +48,25 @@ const setProperties = (elmt, call, text) => {
     elmt.id = call;
     elmt.innerHTML = text;
 }
-createAll(list);
+const filterData = str => {
+
+}
+function deleteEverything() {
+    const parent = document.querySelector(".main-element");
+    const cards = document.getElementsByClassName("card");
+    parent.removeChild(cards);
+}
+let input = document.querySelector("#filter");
+input.addEventListener('click', function(evnt) {
+    evnt.preventDefault();
+    deleteEverything();
+});
+const url = "https://randomuser.me/api/?results=100";
+fetch(url)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(myJson) {
+        const data = myJson.results;
+        createAll(data);
+    });
